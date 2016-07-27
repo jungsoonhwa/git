@@ -1,0 +1,192 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>자동차기술연구소</title>
+<script   src="https://code.jquery.com/jquery-1.9.1.min.js"   integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="   crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div id="content">
+	<div class="gnb"><h1> 내부업무관리시스템..</h1></div>
+	<div class="left_menu" id="cssmenu">
+		  <ul>
+		     <li class="has-sub"><a> 등급평가</a>
+		        <ul>
+		           <li><a href="#">모델분류</a> </li>
+		           <li><a href="#">부품가격</a></li>
+		           <li><a href="#">작업시간</a></li>
+		           <li><a href="#">도장평가</a></li>
+		           <li><a href="#">D&R지수</a></li>
+		           <li><a href="#">조정결과</a></li>
+		        </ul>
+		     </li>
+		      <li><a href="#" >차량운행관리</a></li>
+		     <li class="has-sub"><a> 기획조사실</a>
+		        <ul>
+		           <li><a href="#">차량관리</a> </li>
+		           <li><a href="#">대외동향보고</a></li>
+		           <li><a href="#">손보임직원 연락처</a></li>
+		        </ul>
+		     </li>
+		      <li class="has-sub"><a> 시험연구실</a>
+		        <ul>
+		           <li><a href="#">차량관리</a> </li>
+		        </ul>
+		     </li>
+		     <li><a href="#">전산업무팀</a></li>
+		      <li class="has-sub"><a> 기술연구팀</a>
+		        <ul>
+		           <li><a href="#">차량관리</a> </li>
+		        </ul>
+		     </li>
+		      <li class="has-sub"><a> 연수팀</a>
+		        <ul>
+		           <li><a href="#">차량관리</a> </li>
+		        </ul>
+		     </li>
+		  </ul>
+	</div>
+	<div class="container">
+	<h2>도장빈도 DB</h2>
+		<form>
+			<fieldset class="srch">
+			    <legend>검색영역</legend>
+			    <label>년도</label>
+			    <select>
+			    <option>2016년</option>
+			    </select>
+			    <label>분기</label>
+			    <select>
+			    <option>2분기
+			    </option>
+			    </select> 
+			   <button type="button" class="btn btn-default btn-xs">검색</button>
+  
+			</fieldset>
+		</form>
+		<!-- UI Object -->
+		<table class="tbl_type">
+			<caption>구분</caption>
+			<colgroup>
+				<col ><col >
+				<col ><col >
+				<col ><col >
+				<col ><col >
+				<col ><col ><col >
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">부품</th>
+					<th>앞범퍼</th>
+					<th>앞패널 </th>
+					<th>본네트</th>
+					<th>앞휀다좌</th>
+					<th>앞휜다좌</th>
+					<th>앞도어좌</th>
+					<th>앞도어우</th>
+					<th>뒷도어좌</th>
+					<th>뒷도어우</th>
+					<th>뒷휀다우</th>
+				</tr>
+				<tr>
+					<td scope="row">방법</td>
+					<td><span class="fc-blue">교환</span></td>
+					<td><span class="fc-red">판금</span></td>
+					<td><span class="fc-red">교환</span></td>
+					<td><span class="fc-red">교환</span></td>
+					<td><span class="fc-red">교환</span></td>
+					<td><span class="fc-red">판금</span></td>
+					<td><span class="fc-red">판금</span></td>
+					<td><span class="fc-red">판금</span></td>
+					<td><span class="fc-blue">판금</span></td>
+					<td><span class="fc-red">판금</span></td>
+				</tr>
+				
+			<tr>
+				<td scope="row">빈도</td>
+				<td><input type="text" name="" title="39.6" class="i_text"></td>
+				<td><input type="text" name="" title="519.8" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+			</tr>
+			<tr>
+				<th scope="row">뒤휀다좌</th>
+				<th>뒤패널</th>
+				<th>뒤범퍼</th>
+				<th>트렁크백도어</th>
+				<th>루프</th>
+				<th><span class="fc-blue">시간당공임</span></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+					<td><span class="fc-blue">교환</span></td>
+					<td><span class="fc-red">판금</span></td>
+					<td><span class="fc-red">교환</span></td>
+					<td><span class="fc-red">교환</span></td>
+					<td><span class="fc-red">교환</span></td>
+					<td><input type="text" name="" title="39.6" class="i_text"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			<tr>
+				<td scope="row"><input type="text" name="" title="39.6" class="i_text"></td>
+				<td><input type="text" name="" title="39.6" class="i_text"></td>
+				<td><input type="text" name="" title="519.8" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td><input type="text" name="" title="" class="i_text"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			</tbody>
+		</table>
+		<table cellspacing="0" border="1" summary="" class="tbl_type mt30 bt">
+			<caption></caption>
+			<tbody>
+			<tr>
+				<td scope="row"><input type="text"  title="파일찾기" class="file_input"> 
+				<button class="btn btn-default btn-xs file_button" type="submit">파일찾기</button></td>
+				<td ><button type="button" class="btn btn-warning">도장요금 업로드</button></td>
+				<td><button type="button" class="btn btn-primary">도장요 포맷다운</button></td>
+				<td><button type="button" class="btn btn-primary">도장가중 엑셀다운</button></td>
+				<td><button type="button" class="btn btn-warning">도장빈도 등록</button></td>
+			</tr>
+			<tr>
+				<td scope="row"></td>
+				<td><button type="button" class="btn btn-primary">도장요금 엑셀다운</button></td>
+				<td><button type="button" class="btn btn-success">도장가중계 엑셀다운</button></td>
+				<td></td>
+				<td></td>
+			</tr>
+			</tbody>
+		</table>
+
+			
+<!-- //UI Object -->
+	   
+	</div>
+
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>
